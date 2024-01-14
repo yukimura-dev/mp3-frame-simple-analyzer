@@ -1,0 +1,23 @@
+{
+  "name": "mp3-frame-simple-analyzer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bin": {
+    "mp3fan": "dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@types/yargs": "^17.0.32",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "mp3-parser": "^0.3.0",
+    "yargs": "^17.7.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "mp3fan": "tsc && node dist/index.js"
+  }
+}
